@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Copy to Clipboard</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+  </head>
+  <body>
+
+    <input value="frango assadooo" id="copiar">
+
+    <input onmouseleave="$(this).val('Código');"  onmouseover="$(this).val('Clique aqui para Copiar');" onclick="$(copiar).select(); document.execCommand('copy');" type="text" id="url" value="Código" />
+    
+    
+    <style>
+        #url{
+          text-align: center;
+          padding: 40px;
+          border-radius: 15px;
+          border: none;
+          cursor: pointer;       
+          transition: 0.5s;   
+          background-color: rgb(12, 151, 206);
+        }
+
+        #url:hover{
+            transition: 0.5s;
+            color:white;
+            background-color: rgb(27, 25, 131);
+            
+        }
+      </style>
+
+  </body>
+
+
+</html>
